@@ -1,7 +1,8 @@
 import css from "./ImageGalleryItem.module.css";
+import { ImageGalleryItemProps } from "./ImageGalleryItem.types";
 // import PropTypes from "prop-types";
 
-const ImageGalleryItem = ({ smallImg, toggleModal, largeImageURL, alt }) => {
+const ImageGalleryItem: React.FC<ImageGalleryItemProps> = ({ smallImg, toggleModal, largeImageURL, alt }) => {
   return (
     <li
       className={css.ImageGalleryItem}

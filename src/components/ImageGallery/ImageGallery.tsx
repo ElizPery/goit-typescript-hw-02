@@ -1,8 +1,9 @@
 import css from "./ImageGallery.module.css";
 import ImageGalleryItem from "../ImageGalleryItem/ImageGalleryItem";
 // import PropTypes from "prop-types";
+import { ImageGalleryProps } from "./ImageGallery.types";
 
-const ImageGallery = ({ items, toggleModal }) => {
+const ImageGallery: React.FC<ImageGalleryProps> = ({ items, toggleModal }) => {
   return (
     <ul className={css.imageGallery}>
       {items.map(({ id, webformatURL, largeImageURL, tags }) => {
